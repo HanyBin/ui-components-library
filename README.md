@@ -11,7 +11,7 @@ Zero dependencies. Accessible. Ready to drop into any project.
 
 ## Live Demo
 
-Open [`index.html`]([index.html](https://hanybin.github.io/ui-components-library/)) in a browser to see the full style guide.
+Open [`https://hanybin.github.io/ui-components-library/`]([index.html](https://hanybin.github.io/ui-components-library/)) in a browser to see the full style guide.
 
 > **Preview (what recruiters see first)**  
 > Clean typography, consistent spacing, visible focus states, multiple variants and real form patterns — not just “pretty buttons”.
