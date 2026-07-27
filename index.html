@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Components Library — Pure CSS</title>
+  <meta name="description" content="A clean, accessible set of buttons, cards and form controls built with pure CSS. Zero dependencies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="demo-header">
+    <div class="container">
+      <h1>UI Components Library</h1>
+      <p>A production-ready set of buttons, cards and form elements built with pure CSS. No frameworks. No JavaScript required for core UI.</p>
+      <div class="meta">
+        <span class="meta-badge">Pure CSS</span>
+        <span class="meta-badge">Accessible</span>
+        <span class="meta-badge">Zero deps</span>
+        <span class="meta-badge">CSS Variables</span>
+        <span class="meta-badge">Dark-ready</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="demo-nav">
+    <div class="container">
+      <ul>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- ========== BUTTONS ========== -->
+    <section class="section" id="buttons">
+      <h2 class="section-title">Buttons</h2>
+      <p class="section-desc">Multiple variants, sizes and states. Fully keyboard accessible with visible focus rings.</p>
+
+      <div class="preview-block">
+        <div class="demo-label">Variants</div>
+        <div class="component-row">
+          <button class="btn btn--primary">Primary</button>
+          <button class="btn btn--secondary">Secondary</button>
+          <button class="btn btn--success">Success</button>
+          <button class="btn btn--danger">Danger</button>
+          <button class="btn btn--warning">Warning</button>
+          <button class="btn btn--outline">Outline</button>
+          <button class="btn btn--outline-secondary">Outline Sec</button>
+          <button class="btn btn--ghost">Ghost</button>
+          <button class="btn btn--soft">Soft</button>
+        </div>
+      </div>
+
+      <div class="preview-block">
+        <div class="demo-label">Sizes</div>
+        <div class="component-row">
+          <button class="btn btn--primary btn--sm">Small</button>
+          <button class="btn btn--primary">Default</button>
+          <button class="btn btn--primary btn--lg">Large</button>
+        </div>
+      </div>
+
+      <div class="preview-block">
+        <div class="demo-label">States</div>
+        <div class="component-row">
+          <button class="btn btn--primary" disabled>Disabled</button>
+          <button class="btn btn--primary btn--loading">Loading</button>
+          <button class="btn btn--outline btn--loading">Loading</button>
+          <button class="btn btn--primary btn--block" style="max-width: 240px;">Full width</button>
+        </div>
+      </div>
+
+      <div class="preview-block">
+        <div class="demo-label">Icon buttons</div>
+        <div class="component-row">
+          <button class="btn btn--primary btn--icon" aria-label="Add">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <button class="btn btn--outline btn--icon" aria-label="Settings">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </button>
+          <button class="btn btn--ghost btn--icon btn--sm" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CARDS ========== -->
+    <section class="section" id="cards">
+      <h2 class="section-title">Cards</h2>
+      <p class="section-desc">Flexible card patterns for content, stats, profiles and lists.</p>
+
+      <div class="card-demo-grid">
+        <!-- Basic card -->
+        <article class="card card--hoverable">
+          <div class="card__header">
+            <div>
+              <h3 class="card__title">Project Alpha</h3>
+              <p class="card__subtitle">Updated 2 hours ago</p>
+            </div>
+            <span class="badge badge--primary">Active</span>
+          </div>
+          <div class="card__body">
+            <p class="card__text">A modern dashboard for tracking KPIs and team performance in real time.</p>
+          </div>
+          <div class="card__footer">
+            <button class="btn btn--primary btn--sm">Open</button>
+            <button class="btn btn--ghost btn--sm">Share</button>
+          </div>
+        </article>
+
+        <!-- Elevated card -->
+        <article class="card card--elevated card--hoverable">
+          <div class="card__header">
+            <div>
+              <h3 class="card__title">Design System</h3>
+              <p class="card__subtitle">v2.4.0</p>
+            </div>
+            <span class="badge badge--success">Stable</span>
+          </div>
+          <div class="card__body">
+            <p class="card__text">Tokens, components and documentation for consistent product UI.</p>
+          </div>
+          <div class="card__footer card__footer--between">
+            <span class="badge badge--neutral">12 components</span>
+            <button class="btn btn--outline btn--sm">Docs</button>
+          </div>
+        </article>
+
+        <!-- Accent card -->
+        <article class="card card--accent">
+          <div class="card__body">
+            <h3 class="card__title">Important notice</h3>
+            <p class="card__text" style="margin-top: 0.5rem;">Maintenance window scheduled for Saturday 02:00–04:00 UTC. Expect brief downtime.</p>
+          </div>
+        </article>
+
+        <!-- Stat cards -->
+        <article class="card card--stat">
+          <div class="stat-value">12.4k</div>
+          <div class="stat-label">Monthly active users</div>
+          <span class="stat-trend stat-trend--up">↑ 12.5%</span>
+        </article>
+
+        <article class="card card--stat">
+          <div class="stat-value">98.2%</div>
+          <div class="stat-label">Uptime (30d)</div>
+          <span class="stat-trend stat-trend--up">↑ 0.3%</span>
+        </article>
+
+        <article class="card card--stat">
+          <div class="stat-value">$48.2k</div>
+          <div class="stat-label">Revenue this month</div>
+          <span class="stat-trend stat-trend--down">↓ 2.1%</span>
+        </article>
+
+        <!-- Profile card -->
+        <article class="card card--profile card--hoverable">
+          <div class="avatar" style="display:flex;align-items:center;justify-content:center;font-size:1.75rem;font-weight:700;color:var(--color-primary);background:var(--color-primary-light);">JD</div>
+          <h3 class="card__title">Jane Doe</h3>
+          <p class="card__subtitle">Product Designer</p>
+          <p class="card__text" style="margin-top: 0.75rem;">Building thoughtful interfaces and design systems.</p>
+          <div class="card__footer" style="justify-content:center;padding-top:1.25rem;">
+            <button class="btn btn--primary btn--sm">Follow</button>
+            <button class="btn btn--outline-secondary btn--sm">Message</button>
+          </div>
+        </article>
+
+        <!-- Horizontal-ish content card -->
+        <article class="card">
+          <div class="card__body">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
+              <span class="badge badge--warning">Beta</span>
+              <span class="badge badge--neutral">API</span>
+            </div>
+            <h3 class="card__title">Webhooks v2</h3>
+            <p class="card__text">Reliable event delivery with retries, signatures and a new dashboard.</p>
+          </div>
+          <div class="card__footer">
+            <button class="btn btn--soft btn--sm">Learn more →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== FORMS ========== -->
+    <section class="section" id="forms">
+      <h2 class="section-title">Forms</h2>
+      <p class="section-desc">Accessible inputs, selects, checkboxes, radios and switches with clear states.</p>
+
+      <div class="form-demo">
+        <form action="#" method="get" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="name">Full name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="jane@company.com" />
+            <span class="form-hint">We'll never share your email.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="role">Role</label>
+            <select class="form-select" id="role" name="role">
+              <option value="">Select a role</option>
+              <option value="designer">Designer</option>
+              <option value="engineer">Engineer</option>
+              <option value="pm">Product Manager</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bio">Bio</label>
+            <textarea class="form-textarea" id="bio" name="bio" placeholder="A short introduction..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preferences</label>
+            <label class="form-check">
+              <input type="checkbox" name="newsletter" checked />
+              <span class="form-check__label">
+                Email newsletter
+                <span class="form-check__desc">Product updates and tips, max 2× per month</span>
+              </span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox" name="marketing" />
+              <span class="form-check__label">Marketing communications</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Plan</label>
+            <label class="form-check">
+              <input type="radio" name="plan" value="free" checked />
+              <span class="form-check__label">Free</span>
+            </label>
+            <label class="form-check">
+              <input type="radio" name="plan" value="pro" />
+              <span class="form-check__label">Pro — $12/mo</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-switch">
+              <input type="checkbox" name="notifications" checked />
+              <span class="form-check__label">Enable notifications</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="website">Website</label>
+            <div class="form-input-group">
+              <span class="form-input-addon">https://</span>
+              <input class="form-input" type="text" id="website" name="website" placeholder="example.com" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="error-demo">With error</label>
+            <input class="form-input form-input--error" type="text" id="error-demo" value="invalid@" />
+            <span class="form-error">Please enter a valid email address.</span>
+          </div>
+
+          <div style="display:flex;gap:0.75rem;margin-top:1.5rem;">
+            <button type="submit" class="btn btn--primary">Save changes</button>
+            <button type="button" class="btn btn--ghost">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== USAGE ========== -->
+    <section class="section" id="usage">
+      <h2 class="section-title">Usage</h2>
+      <p class="section-desc">Drop the CSS into any project. No build step required.</p>
+
+      <div class="preview-block">
+        <div class="demo-label">Include the stylesheet</div>
+        <pre style="font-family:var(--font-mono);font-size:0.8125rem;background:var(--color-bg-muted);padding:1rem;border-radius:var(--radius-md);overflow:auto;border:1px solid var(--color-border);"><code>&lt;link rel="stylesheet" href="css/styles.css" /&gt;</code></pre>
+      </div>
+
+      <div class="preview-block">
+        <div class="demo-label">Example markup</div>
+        <pre style="font-family:var(--font-mono);font-size:0.8125rem;background:var(--color-bg-muted);padding:1rem;border-radius:var(--radius-md);overflow:auto;border:1px solid var(--color-border);"><code>&lt;button class="btn btn--primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn--outline btn--sm"&gt;Small outline&lt;/button&gt;
+
+&lt;article class="card card--hoverable"&gt;
+  &lt;div class="card__body"&gt;
+    &lt;h3 class="card__title"&gt;Title&lt;/h3&gt;
+    &lt;p class="card__text"&gt;Description&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+&lt;label class="form-label" for="email"&gt;Email&lt;/label&gt;
+&lt;input class="form-input" type="email" id="email" /&gt;</code></pre>
+      </div>
+
+      <div class="preview-block">
+        <div class="demo-label">Customize with CSS variables</div>
+        <pre style="font-family:var(--font-mono);font-size:0.8125rem;background:var(--color-bg-muted);padding:1rem;border-radius:var(--radius-md);overflow:auto;border:1px solid var(--color-border);"><code>:root {
+  --color-primary: #0ea5e9;   /* your brand color */
+  --radius-md: 0.625rem;
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="demo-footer">
+    <div class="container">
+      <p>UI Components Library · Pure CSS · Built for portfolio quality</p>
+    </div>
+  </footer>
+</body>
+</html>
